@@ -3,7 +3,7 @@ import com.anncode.offersandcoupons.model.Coupon
 
 interface CouponView{
     //Vista
-    fun showCoupons(coupons: ArrayList<Coupon>)
+    fun showCoupons(coupons: ArrayList<Coupon>?)
 
     //Presenter
     fun getCoupons()
