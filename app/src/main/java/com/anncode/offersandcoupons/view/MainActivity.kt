@@ -1,9 +1,9 @@
 package com.anncode.offersandcoupons.view
 
-import android.support.v7.app.AppCompatActivity
+import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
-import android.support.v7.widget.LinearLayoutManager
-import android.support.v7.widget.RecyclerView
+import androidx.recyclerview.widget.LinearLayoutManager
+import androidx.recyclerview.widget.RecyclerView
 import android.util.Log
 import com.anncode.offersandcoupons.model.Coupon
 import com.anncode.offersandcoupons.R
@@ -23,7 +23,8 @@ class MainActivity : AppCompatActivity() {
 
         //VIEW
         val rvCoupons: RecyclerView = findViewById(R.id.rvCoupons) //UI
-        rvCoupons.layoutManager = LinearLayoutManager(this)
+        rvCoupons.layoutManager =
+            LinearLayoutManager(this)
         val coupons = ArrayList<Coupon>()
         //VIEW
 
